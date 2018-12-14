@@ -1,4 +1,6 @@
 set -x        # ECHO on
+export HOME=~
+
 chmod 777 $(dirname $(readlink -f $0))/*
 repo=qshell
 git config --global user.email qgbcs1@gmail.com
