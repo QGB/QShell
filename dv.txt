@@ -1,0 +1,29 @@
+./dv
+
+start game
+Cannot open '/dev/video0': 13, Permission denied
+device_open 37 : Open /dev/video0 successfully. fd = -1
+        device close failed.
+Cannot open '/dev/video1': 13, Permission denied
+device_open 37 : Open /dev/video1 successfully. fd = -1
+        device close failed.
+Cannot open '/dev/video2': 13, Permission denied
+device_open 37 : Open /dev/video2 successfully. fd = -1
+        device close failed.
+Cannot identify '/dev/video3': 2, No such file or directory
+/dev/video3 is no device
+Cannot open '/dev/video3': 2, No such file or directory
+device_open 37 : Open /dev/video3 successfully. fd = -1
+        device close failed.
+Cannot open '/dev/video32': 13, Permission denied
+device_open 37 : Open /dev/video32 successfully. fd = -1
+        device close failed.
+Cannot open '/dev/video33': 13, Permission denied
+device_open 37 : Open /dev/video33 successfully. fd = -1
+        device close failed.
+Cannot identify '': 2, No such file or directory
+ is no device
+Cannot open '': 2, No such file or directory
+device_open 37 : Open  successfully. fd = -1
+        device close failed.
+Cannot identify '': 2, No such file or directory
