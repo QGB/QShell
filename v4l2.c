@@ -352,7 +352,7 @@ static void init_mmap(void) {
 		buf.index = n_buffers;
  
 		if (-1 == xioctl(fd, VIDIOC_QUERYBUF, &buf)){
-			fprintf(stderr, "fd %i , 	%s/n",fd, dev_name);
+			fprintf(stderr, "VIDIOC_QUERYBUF  fd %i , 	%s/n",fd, dev_name);
 			errno_exit("VIDIOC_QUERYBUF");
 		}
 		buffers[n_buffers].length = buf.length;
@@ -419,6 +419,7 @@ static void init_device(void) {
 			fprintf(stderr, "%s is no V4L2 device/n", dev_name);
 			exit(EXIT_FAILURE);
 		} else {
+			fprintf(stderr, "VIDIOC_QUERYCAP  fd %i , 	%s/n",fd, dev_name);
 			errno_exit("VIDIOC_QUERYCAP");
 		}
 	}
