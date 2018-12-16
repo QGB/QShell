@@ -1,8 +1,8 @@
 #
 #
-qscript=$(readlink -f $0)
 # Absolute path this script is in. /home/user/bin
-qsPath="$( cd "$(dirname "$0")" ; pwd -P )"
+qsPath="$( cd "$(dirname "$0")" ; pwd -P )/"
+qscript=$qsPath+'qscript'
 echo source $qscript
 alias r='source ~/.bashrc'
 
