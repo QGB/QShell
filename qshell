@@ -6,7 +6,6 @@ export qscript=$qsPath'qshell'
 echo source $qscript
 alias r='source ~/.bashrc'
 
-alias ll='ls -al'
 
 alias cdq='cd '$qsPath
 alias cds='cd ~/mysite/static'
@@ -15,7 +14,9 @@ alias f='find ~/.. -iname '
 alias fr='find ~/.. -iname '
 alias fsd='find /sdcard -iname '
 
+alias sud='sudo su'
 alias gpl='git pull origin master'
+alias ll='ls -al'
 alias md=mkdir
 alias psg='ps|grep '
 alias st='grep -rnw ./ -e'
