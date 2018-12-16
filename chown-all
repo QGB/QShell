@@ -1,2 +1,3 @@
+set -x
 chown $1:$1 *
 chown $1:$1 .*
