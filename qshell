@@ -1,13 +1,14 @@
 #
 #
 # Absolute path this script is in. /home/user/bin
-qsPath="$( cd "$(dirname "$0")" ; pwd -P )/"
-qscript=$qsPath'qshell'
+export qsPath="$( cd "$(dirname "$0")" ; pwd -P )/"
+export qscript=$qsPath'qshell'
 echo source $qscript
 alias r='source ~/.bashrc'
 
 alias ll='ls -al'
 
+alias cdq='cd '$qsPath
 alias cds='cd ~/mysite/static'
 
 alias f='find ~/.. -iname '
