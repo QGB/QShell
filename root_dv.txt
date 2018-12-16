@@ -1,0 +1,36 @@
+# ../v/dv
+
+start game
+Cannot open '/dev/video0': 16, Device or resource busy
+device_open 37 : Open /dev/video0 successfully. fd = -1
+        device close failed.
+device_open 37 : Open /dev/video1 successfully. fd = 4
+device_close 50 : devices close successfully
+device_open 37 : Open /dev/video2 successfully. fd = 4
+device_close 50 : devices close successfully
+Cannot identify '/dev/video3': 2, No such file or directory
+/dev/video3 is no device
+Cannot open '/dev/video3': 2, No such file or directory
+device_open 37 : Open /dev/video3 successfully. fd = -1
+        device close failed.
+device_open 37 : Open /dev/video32 successfully. fd = 4
+
+        driver name : msm_vidc_driver
+        card name : msm_vdec_8974
+        bus info :
+        driver version : 0.0.1
+
+device_close 50 : devices close successfully
+device_open 37 : Open /dev/video33 successfully. fd = 4
+
+        driver name : msm_vidc_driver
+        card name : msm_venc_8974
+        bus info :
+        driver version : 0.0.1
+
+device_close 50 : devices close successfully
+Cannot identify '': 2, No such file or directory
+ is no device
+Cannot open '': 2, No such file or directory
+device_open 37 : Open  successfully. fd = -1
+        device close failed.

@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 export home=~
+=======
+set -x        # ECHO on
+export HOME=~
+
+chmod 777 $(dirname $(readlink -f $0))/*
+>>>>>>> 8ec43d150e3011603181c4839ed57e86d645bff1
 repo=qshell
 git config --global user.email qgbcs1@gmail.com
 git config --global user.name QGB
