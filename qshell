@@ -1,0 +1,39 @@
+#
+#
+qscript=$(readlink -f $0)
+# Absolute path this script is in. /home/user/bin
+qsPath="$( cd "$(dirname "$0")" ; pwd -P )"
+echo source $qscript
+alias r='source ~/.bashrc'
+
+alias ll='ls -al'
+
+alias cds='cd ~/mysite/static'
+
+alias f='find ~/.. -iname '
+alias fr='find ~/.. -iname '
+alias fsd='find /sdcard -iname '
+
+alias md=mkdir
+alias psg='ps|grep '
+alias st='grep -rnw ./ -e'
+alias pi='apt install'
+alias pkgs='apt search '
+
+alias drivehq='/data/data/com.termux/files/usr/bin/wget -m -nH ftp://qgb:12341234@ftp.drivehq.com/'
+
+alias ts=termux-clipboard-set
+alias tg=termux-clipboard-get
+alias e='termux-open-url file://$PWD/'
+
+
+alias vq='vim /sdcard/qgb/U.py'
+
+alias ve='vim /data/data/com.termux/files/home/getevent/src/getevent.c'
+
+export TERM=xterm-256color
+chmod 755 ~
+
+[[ ":$PATH:" != *":$qsPath:"* ]] && PATH="$qsPath:${PATH}"
+py2Path="/usr/local/python27/bin/"
+[[ ":$PATH:" != *":$py2Path:"* ]] && PATH="$py2Path:${PATH}"
