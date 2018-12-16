@@ -15,6 +15,7 @@ alias f='find ~/.. -iname '
 alias fr='find ~/.. -iname '
 alias fsd='find /sdcard -iname '
 
+alias gpl='git pull origin master'
 alias md=mkdir
 alias psg='ps|grep '
 alias st='grep -rnw ./ -e'
