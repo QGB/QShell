@@ -1,6 +1,9 @@
+set -x
 #need Root
 #chmod -hR 只改变链接，不改变源文件
 cd /data/data/com.termux/files/
 chown -R u0_a246:u0_a246 *
-chmod -R 775 *
-bin doc etc include lib libexec local share src tmp var
+cd usr
+chmod -R 775 bin doc include lib libexec local share src tmp var  # NO etc 
+
+
