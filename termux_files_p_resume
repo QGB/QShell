@@ -1,2 +1,0 @@
-chmod -R 775 /data/data/com.termux/files/
-chown -R u0_a246:u0_a246 7 centos6_git dv.txt gpl gplc http p root_dv.txt scp7 termux_files_p_resume up usshd v.py v4l2 v4l2.c zmirror.sh
