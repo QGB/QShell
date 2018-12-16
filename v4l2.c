@@ -351,9 +351,10 @@ static void init_mmap(void) {
 		buf.memory = V4L2_MEMORY_MMAP;
 		buf.index = n_buffers;
  
-		if (-1 == xioctl(fd, VIDIOC_QUERYBUF, &buf))
+		if (-1 == xioctl(fd, VIDIOC_QUERYBUF, &buf)){
+			fprintf(stderr, "fd %i , 	%s/n",fd, dev_name);
 			errno_exit("VIDIOC_QUERYBUF");
- 
+		}
 		buffers[n_buffers].length = buf.length;
 		buffers[n_buffers].start = mmap(NULL /* start anywhere */, buf.length,
 				PROT_READ | PROT_WRITE /* required */,
