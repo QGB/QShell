@@ -3,3 +3,4 @@
 cd /data/data/com.termux/files/
 chown -R u0_a246:u0_a246 *
 chmod -R 775 *
+bin doc etc include lib libexec local share src tmp var
