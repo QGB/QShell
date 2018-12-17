@@ -10,8 +10,8 @@ alias r='source ~/.bashrc'
 alias cdq='cd '$qsPath
 alias cds='cd ~/mysite/static'
 
-alias f='find ~/.. -iname '
-alias fr='find ~/.. -iname '
+alias f='find ~/../.. -iname '
+alias fr='find / -iname '
 alias fsd='find /sdcard -iname '
 
 alias sud='sudo su'
