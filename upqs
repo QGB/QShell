@@ -15,6 +15,6 @@ repo=qshell
 	git remote add cq https://coding.net/u/qgb/p/$repo/git/;
 	git pull cq master;
 	git add -A ; 
-	git commit -m $* ;
+	git commit -m "$(date)" ;
 	git push cq master ;
 	 ;set +x;source qshell)
