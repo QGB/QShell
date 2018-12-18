@@ -20,7 +20,7 @@ alias gc='git clone --depth=1 '
 alias ll='ls -al'
 alias md=mkdir
 alias psg='ps|grep '
-alias st='grep -rnw ./ -e'
+alias st='grep -rwnI ./ -e'
 alias pi='apt install'
 alias pkgs='apt search '
 
