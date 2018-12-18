@@ -9,6 +9,7 @@ alias r='source ~/.bashrc'
 
 alias cdq='cd '$qsPath
 alias cds='cd ~/mysite/static'
+alias cdinclude='cd ~/../usr/include'
 
 alias f='find ~/../.. -iname '
 alias fr='find / -iname '
