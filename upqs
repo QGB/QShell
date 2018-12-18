@@ -12,8 +12,8 @@ repo=qshell
 
 #in the same env
 (cd $qsPath;
-	git reset --hard;
 	git remote add cq https://coding.net/u/qgb/p/$repo/git/;
+	git pull cq master;
 	git add -A ; 
 	git commit -m $* ;
 	git push cq master ;
