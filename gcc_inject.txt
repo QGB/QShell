@@ -1,0 +1,18 @@
+inject.c:48:30: warning: format specifies type 'unsigned long' but the argument has type 'void *' [-Wformat]
+    LOGE("ptrace_dlopen:%lx",handle);
+                        ~~~  ^~~~~~
+./camera_log.h:12:67: note: expanded from macro 'LOGE'
+#define  LOGE(...)  __android_log_print(ANDROID_LOG_ERROR,LOG_TAG,__VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+1 warning generated.
+/data/data/com.termux/files/usr/bin/ld: /data/data/com.termux/files/usr/tmp/inject-bc5694.o: in function `main':
+inject.c:(.text+0xbc): undefined reference to `__android_log_print'
+/data/data/com.termux/files/usr/bin/ld: inject.c:(.text+0xc8): undefined reference to `ptrace_attach'
+/data/data/com.termux/files/usr/bin/ld: inject.c:(.text+0xd4): undefined reference to `ptrace_find_dlinfo'
+/data/data/com.termux/files/usr/bin/ld: inject.c:(.text+0xe8): undefined reference to `ptrace_dlopen'
+/data/data/com.termux/files/usr/bin/ld: inject.c:(.text+0x100): undefined reference to `__android_log_print'
+/data/data/com.termux/files/usr/bin/ld: inject.c:(.text+0x114): undefined reference to `ptrace_dlsym'
+/data/data/com.termux/files/usr/bin/ld: inject.c:(.text+0x12c): undefined reference to `__android_log_print'
+/data/data/com.termux/files/usr/bin/ld: inject.c:(.text+0x144): undefined reference to `replace_all_rels'
+/data/data/com.termux/files/usr/bin/ld: inject.c:(.text+0x14c): undefined reference to `ptrace_detach'
+clang-6.0: error: linker command failed with exit code 1 (use -v to see invocation)
