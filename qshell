@@ -37,7 +37,7 @@ alias vq='vim /sdcard/qgb/U.py'
 alias ve='vim /data/data/com.termux/files/home/getevent/src/getevent.c'
 
 export TERM=xterm-256color
-chmod 755 ~
+# chmod 755 ~
 
 [[ ":$PATH:" != *":$qsPath:"* ]] && PATH="$qsPath:${PATH}"
 py2Path="/usr/local/python27/bin/"
