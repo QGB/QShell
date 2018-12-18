@@ -16,6 +16,7 @@ alias fsd='find /sdcard -iname '
 
 alias sud='sudo su'
 alias gpl='git pull origin master'
+alias gc='git clone --depth=1 '
 alias ll='ls -al'
 alias md=mkdir
 alias psg='ps|grep '
