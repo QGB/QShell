@@ -1,0 +1,20 @@
+git config --global user.email qgbcs1@gmail.com
+git config --global user.name QGB
+
+git config --global core.filemode false
+git config --global credential.helper store
+
+set -x        # ECHO on
+export HOME=~
+
+chmod 777 $(dirname $(readlink -f $0))/*
+repo=qshell
+
+#in the same env
+(cd $qsPath;
+	git reset --hard;
+	git remote add cq https://coding.net/u/qgb/p/$repo/git/;
+	git add -A ; 
+	git commit -m $* ;
+	git push cq master ;
+	 ;set +x;source qshell)
