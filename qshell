@@ -4,7 +4,7 @@
 [ "$qsPath" != "" ] || export qsPath="$( cd "$(dirname ${BASH_SOURCE[0]} )" ; pwd -P )/"
 export qscript=$qsPath'qshell'
 echo source $qscript
-alias r='source ~/.bashrc'
+alias r='source ~/.bash_profile'
 
 
 alias cdq='cd '$qsPath
