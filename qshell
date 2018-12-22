@@ -30,7 +30,11 @@ alias drivehq='/data/data/com.termux/files/usr/bin/wget -m -nH ftp://qgb:1234123
 alias ts=termux-clipboard-set
 alias tg=termux-clipboard-get
 alias e='termux-open-url file://$PWD/'
+<<<<<<< HEAD
 alias rw='mount -o remount,rw / /system'
+=======
+alias rw='mount -o remount,rw /system ; mount -o remount,rw /'
+>>>>>>> 7c4fbe0c87d27bc002c7adc7685789f817bd3df6
 
 alias vq='vim /sdcard/qgb/U.py'
 
