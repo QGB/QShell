@@ -23,6 +23,7 @@ alias md=mkdir
 alias ipconfig=ifconfig
 alias 7='chmod 777'
 alias psg='ps|grep '
+alias pstg='pstree|grep '
 alias st='grep -rwnI ./ -e'
 
 alias pi='apt install'
