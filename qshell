@@ -3,7 +3,7 @@
 # Absolute path this script is in. /home/user/bin
 [ "$qsPath" != "" ] || export qsPath="$( cd "$(dirname ${BASH_SOURCE[0]} )" ; pwd -P )/"
 export qscript=$qsPath'qshell'
-echo source $qscript
+echo source $qscript \> ~/.bash_profile
 alias r='source ~/.bash_profile'
 
 
@@ -16,14 +16,17 @@ alias fr='find / -iname '
 alias fsd='find /sdcard -iname '
 
 alias sud='sudo su'
-alias gpl='git pull origin master'
-alias gc='git clone --depth=1 '
 alias ll='ls -al'
 alias md=mkdir
+alias ipconfig=ifconfig
 alias psg='ps|grep '
 alias st='grep -rwnI ./ -e'
+
 alias pi='apt install'
 alias pkgs='apt search '
+
+alias gpl='git pull origin master'
+alias gc='git clone --depth=1 '
 
 alias drivehq='/data/data/com.termux/files/usr/bin/wget -m -nH ftp://qgb:12341234@ftp.drivehq.com/'
 
