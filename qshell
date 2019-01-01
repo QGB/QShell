@@ -21,6 +21,7 @@ alias sud='sudo su'
 alias ll='ls -al'
 alias md=mkdir
 alias ipconfig=ifconfig
+alias tracert=traceroute
 alias 7='chmod 777'
 alias psg='ps|grep '
 alias pstg='pstree|grep '
