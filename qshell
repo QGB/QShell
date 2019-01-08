@@ -1,7 +1,7 @@
 # Absolute path this script is in. /home/user/bin
 [ "$qsPath" != "" ] || export qsPath="$( cd "$(dirname ${BASH_SOURCE[0]} )" ; pwd -P )/"
 export qscript=$qsPath'qshell'
-echo echo source $qscript \>\> \~/.bashrc
+echo echo source $qscript \>\> \~/.bashrc \&\& source ~/.bashrc
 alias r='source $qscript'
 #echo echo source $qscript \>\> \~/.bash_profile
 #alias r='source ~/.bash_profile'
