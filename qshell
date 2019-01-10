@@ -1,5 +1,3 @@
-#
-#
 # Absolute path this script is in. /home/user/bin
 [ "$qsPath" != "" ] || export qsPath="$( cd "$(dirname ${BASH_SOURCE[0]} )" ; pwd -P )/"
 export qscript=$qsPath'qshell'
