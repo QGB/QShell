@@ -11,7 +11,8 @@ alias cdq='cd '$qsPath
 alias cds='cd ~/mysite/static'
 alias cdinclude='cd ~/../usr/include'
 
-alias f='find ~/../.. -iname '
+alias f='find ./ -iname '
+alias ft='find ~/../.. -iname '
 alias fr='find / -iname '
 alias fsd='find /sdcard -iname '
 
