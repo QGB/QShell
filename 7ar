@@ -1,3 +1,3 @@
 chmod -R 777 *
 #chmod -R 777 .*  # -R  和 .* 会匹配系统所有文件
-chmod 777 .
+chmod 777 .*
