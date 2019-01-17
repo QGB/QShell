@@ -17,7 +17,7 @@ alias fr='find / -iname '
 alias fsd='find /sdcard -iname '
 
 alias sud='sudo su'
-alias ll='ls -al'
+alias ll='ls -al --full-time'
 alias md=mkdir
 alias ipconfig=ifconfig
 alias tracert=traceroute
