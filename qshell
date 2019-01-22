@@ -26,6 +26,7 @@ alias 7='chmod 777'
 alias psg='ps|grep '
 alias pstg='pstree|grep '
 alias st='grep -rwnI ./ -e'
+alias unmount=umount
 
 alias pi='apt install'
 alias pkgs='apt search '
