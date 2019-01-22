@@ -1,0 +1,1 @@
+mount.cifs //192.168.1.111/g /mnt/g -o file_mode=0777,dir_mode=0777,rw,username=administrator,password=0,iocharset=utf8
