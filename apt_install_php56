@@ -1,0 +1,4 @@
+sudo apt update && sudo apt install -y php5.6 php5.6-cli php5.6-common php5.6-curl php5.6-mbstring php5.6-mysql php5.6-xml
+
+
+# apt install -y build-essential libfreetype6-dev dh-php5 libjpeg62-turbo-dev libmcrypt-dev libpng12-dev libfreetype6 libjpeg62-turbo libmcrypt4 libpng12-0 
