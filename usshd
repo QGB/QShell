@@ -2,7 +2,10 @@ echo -e "123123\n123123"|sudo passwd root
 
 sudo apt install -y openssh-server tmux
 
+echo -e "##edit[sshd_config]  PasswordAuthentication yes \n PermitRootLogin yes "
 find /etc -name sshd_config|sudo xargs gedit
+
+echo -e "##edit[ssh_config]  PasswordAuthentication yes \n  "
 find /etc -name ssh_config|sudo xargs gedit
 
 
@@ -10,4 +13,5 @@ sudo /etc/init.d/ssh restart
 
 
 #echo -e "yes\n123123"|
+
 ssh -T root@127.0.0.1
