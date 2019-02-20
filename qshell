@@ -42,6 +42,7 @@ alias drivehq='/data/data/com.termux/files/usr/bin/wget -m -nH ftp://qgb:1234123
 
 alias ts=termux-clipboard-set
 alias tg=termux-clipboard-get
+alias tl='ttyd login'
 alias e='termux-open-url file://$PWD/'
 
 alias rw='mount -o remount,rw /system ; mount -o remount,rw /'

@@ -1,2 +1,6 @@
-apt-get install linux-azure
-apt-get install linux-tools-virtual-lts-xenial linux-cloud-tools-virtual-lts-xenial
+echo ubuntu 16.04 above
+sudo apt-get install linux-azure
+#apt-get install linux-tools-virtual-lts-xenial linux-cloud-tools-virtual-lts-xenial
+
+
+echo ######### need reboot
