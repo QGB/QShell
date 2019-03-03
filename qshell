@@ -36,6 +36,7 @@ alias gpl='git pull origin master'
 alias gc='git clone --depth=1 '
 ############ ubuntu ############
 alias usshd=ubuntu-sshd
+alias cdesk='cd ~/桌面/'
 
 ############ termux ############
 alias drivehq='/data/data/com.termux/files/usr/bin/wget -m -nH ftp://qgb:12341234@ftp.drivehq.com/'
