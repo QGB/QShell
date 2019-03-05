@@ -37,6 +37,8 @@ alias gc='git clone --depth=1 '
 ############ ubuntu ############
 alias usshd=ubuntu-sshd
 alias cdesk='cd ~/桌面/'
+lb() { sudo dd if=$2 iflag=skip_bytes skip=$(($(sudo blockdev --getsize64 $2) - $1)) bs=1M ; } ; 
+#lb 1024 DEVICE
 
 ############ termux ############
 alias drivehq='/data/data/com.termux/files/usr/bin/wget -m -nH ftp://qgb:12341234@ftp.drivehq.com/'
