@@ -1,0 +1,1 @@
+vi /etc/ssh/sshd_config  &&  /etc/init.d/ssh restart
