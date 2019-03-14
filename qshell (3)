@@ -23,7 +23,6 @@ alias md=mkdir
 alias ipconfig=ifconfig
 alias tracert=traceroute
 alias ns='netstat -antlp'
-alias wns='watch -n0.1 netstat -antlp'
 alias 7='chmod 777'
 alias psg='ps|grep '
 alias pstg='pstree|grep '
@@ -36,7 +35,7 @@ alias pkgs='apt search '
 alias gpl='git pull origin master'
 alias gc='git clone --depth=1 '
 
-alias tl='ttyd tmux at'
+alias tm='./ttyd tmux at'
 ############ ubuntu ############
 alias usshd=ubuntu-sshd
 alias cdesk='cd ~/桌面/'
