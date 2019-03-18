@@ -1,0 +1,2 @@
+set -x
+sudo iptables -I INPUT 5 -i eth0 -p tcp --dport $1 -m state --state NEW,ESTABLISHED -j ACCEPT

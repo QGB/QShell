@@ -34,6 +34,8 @@ alias pkgs='apt search '
 
 alias gpl='git pull origin master'
 alias gc='git clone --depth=1 '
+
+alias tm='ttyd tmux at'
 ############ ubuntu ############
 alias usshd=ubuntu-sshd
 
