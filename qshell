@@ -63,7 +63,7 @@ function dec() {
 }
 
 # 自动压缩：判断后缀名并调用相应压缩程序
-function com() {
+function compress() {
     if [ -n "$1" ] ; then
         FILE=$1
         case $FILE in
@@ -76,7 +76,7 @@ function com() {
         *.rar) shift && rar $FILE $* ;;
         esac
     else
-        echo "usage: q-compress <foo.tar.gz> ./foo ./bar"
+        echo "usage: compress <foo.tar.gz> ./foo ./bar"
     fi
 }
 
