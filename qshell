@@ -79,7 +79,7 @@ function compress() {
         echo "usage: compress <foo.tar.gz> ./foo ./bar"
     fi
 }
-
+alias com=compress
 ############ ubuntu ############
 alias usshd=ubuntu-sshd
 alias cdesk='cd ~/桌面/'

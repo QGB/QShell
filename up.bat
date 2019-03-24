@@ -11,7 +11,7 @@ set QGB=%wsDriver%\QGB\
 if not defined ws (set ws=%wsDriver%\QGB\babun\cygwin\home\qgb\wshell\)
 
 if "%*"=="" (for /f "delims=" %%i in ('%ws%datetime.bat') do set commit_msg=%%i ) else (set commit_msg=%*)
-if "%commit_msg%"=="" (set commit_msg="default up")
+if "%commit_msg%"=="" (set commit_msg=default up)
 
 
 git config --global user.email %gitMail%
