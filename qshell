@@ -40,7 +40,7 @@ alias gc='git clone --depth=1 '
 alias ta='tmux at'
 alias tm='ttyd tmux at'
 #deCompress
-function dec() {
+function deCompress() {
     if [ -f $1 ] ; then
         case $1 in
         *.tar.bz2)   tar -xvjf $1    ;;
@@ -61,7 +61,6 @@ function dec() {
         echo "'$1' is not a valid file!"
     fi
 }
-
 # 自动压缩：判断后缀名并调用相应压缩程序
 function compress() {
     if [ -n "$1" ] ; then
@@ -79,6 +78,11 @@ function compress() {
         echo "usage: compress <foo.tar.gz> ./foo ./bar"
     fi
 }
+
+alias dec=deCompress
+alias decompress=deCompress
+alias extract=deCompress
+
 alias com=compress
 ############ ubuntu ############
 alias usshd=ubuntu-sshd
