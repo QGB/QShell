@@ -36,7 +36,7 @@ alias gpl='git pull origin master'
 alias gc='git clone --depth=1 '
 
 alias ta='tmux at'
-alias tm='ttyd tmux at'
+alias tm='export TMUX= ; ttyd tmux at'
 #deCompress
 function deCompress() {
     if [ -f $1 ] ; then
@@ -85,6 +85,7 @@ alias com=compress
 ############ centos ############
 alias yi='yum -y install'
 alias ys='yum search '
+alias stop-firewall='systemctl stop firewalld'
 
 ############ ubuntu ############
 alias pi='apt install'
