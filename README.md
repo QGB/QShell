@@ -6,4 +6,9 @@ curl https://coding.net/u/qgb/p/QShell/git/archive/master > qshell.zip ;  python
 
 curl https://coding.net/u/qgb/p/QShell/git/archive/master > qshell.zip ;  unzip -u -j qshell.zip 'QShell-master/*' -d ~/qshell
 
+## For SFTP 
+git clone https://github.com/QGB/QShell ~/qshell &amp;&amp;  echo source ~/qshell/qshell >> ~/.bash_profile  &amp;&amp; source ~/.bash_profile
+
+
+
 git clone https://github.com/QGB/QShell ~/qshell &amp;&amp;  echo source ~/qshell/qshell >> ~/.bashrc  &amp;&amp; source ~/.bashrc
