@@ -26,10 +26,11 @@ alias ns='netstat -antlp'
 alias wns='watch -n0.1 netstat -antlp'
 alias wio='watch -n0.1 iostat -c -d'
 alias 7='chmod 777'
-alias psg='ps|grep '
-alias pstg='pstree|grep '
+alias psg='ps -au|grep '
+alias pstg='pstree|grep -C 3 '
 alias st='grep -rwnI ./ -e'
 alias unmount=umount
+alias mklink='ln -s '
 
 
 alias gpl='git pull origin master'
