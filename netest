@@ -1,0 +1,4 @@
+set -x
+wget https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py
+
+python speedtest.py  # python 2&3 OK
