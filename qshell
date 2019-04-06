@@ -31,6 +31,8 @@ alias pstg='pstree -ap|grep -C 3 '
 alias st='grep -rwnI ./ -e'
 alias unmount=umount
 alias mklink='ln -s '
+alias ipy='ipython3 --no-banner --autocall=2 '"'"'--InteractiveShellApp.exec_lines=["from qgb import *"] '"'"' '
+# 'from .. '  and   "from .."  is ok
 
 
 alias gpl='git pull origin master'
