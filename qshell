@@ -6,10 +6,10 @@ alias r='source $qscript'
 #echo echo source $qscript \>\> \~/.bash_profile
 #alias r='source ~/.bash_profile'
 
+export PS1='$PWD \t\$ '
 
 alias cdq='cd '$qsPath
 alias cds='cd ~/mysite/static'
-alias cdinclude='cd ~/../usr/include'
 
 alias f='find ./ -iname '
 alias ft='find ~/../.. -iname '
@@ -97,6 +97,8 @@ alias cdesk='cd ~/桌面/'
 lb() { sudo dd if=$2 iflag=skip_bytes skip=$(($(sudo blockdev --getsize64 $2) - $1)) bs=1M ; } ; 
 #lb 1024 DEVICE
 ############ termux ############
+alias cdinclude='cd ~/../usr/include'
+
 alias drivehq='/data/data/com.termux/files/usr/bin/wget -m -nH ftp://qgb:12341234@ftp.drivehq.com/'
 
 alias ts=termux-clipboard-set
