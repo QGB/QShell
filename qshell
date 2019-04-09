@@ -31,8 +31,15 @@ alias pstg='pstree -ap|grep -C 3 '
 alias st='grep -rwnI ./ -e'
 alias unmount=umount
 alias mklink='ln -s '
-alias ipy='ipython3 --no-banner --autocall=2 '"'"'--InteractiveShellApp.exec_lines=["from qgb import *"] '"'"' '
+alias ipy3='ipython3 --no-banner --autocall=2 '"'"'--InteractiveShellApp.exec_lines=["from qgb import *"] '"'"' '
 # 'from .. '  and   "from .."  is ok
+alias ipy='ipy3'
+
+
+alias ds ='docker search'
+alias dps='docker ps'
+alias dp ='docker pull'
+alias dexec ='docker exec -it -u 0 07ad bash '
 
 
 alias gpl='git pull origin master'
