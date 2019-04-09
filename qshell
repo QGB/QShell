@@ -36,10 +36,10 @@ alias ipy3='ipython3 --no-banner --autocall=2 '"'"'--InteractiveShellApp.exec_li
 alias ipy='ipy3'
 
 
-alias ds ='docker search'
+alias ds='docker search'
 alias dps='docker ps'
-alias dp ='docker pull'
-alias dexec ='docker exec -it -u 0 07ad bash '
+alias dp='docker pull'
+alias dexec='docker exec -it -u 0 07ad bash '
 
 
 alias gpl='git pull origin master'
