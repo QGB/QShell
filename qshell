@@ -43,6 +43,7 @@ alias dexec='docker exec -it -u 0 07ad bash '
 
 
 alias gpl='git pull origin master'
+alias gpl='git pull cq master'
 alias gc='git clone --depth=1 '
 
 alias ta='tmux at'
