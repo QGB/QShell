@@ -2,6 +2,8 @@ if "%gitUser%"=="" (set gitUser=QGB)
 if "%gitMail%"=="" (set gitMail=qgbcs1@gmail.com)
 @rem 更换用户名 需要在 【凭据管理器】》【Windows】 中删除原来的
 for %%a in ("%cd%") do set gitRepo=%%~nxa
+if "gitRepo"=="" (set gitRepo=qshell)
+
 
 git pull cq master
 @rem 如果没有国内git加速，需要改为 origin
