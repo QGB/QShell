@@ -1,7 +1,21 @@
-echo '/root/anaconda3/bin/jupyter  $*' > /root/anaconda3/condabin/jupyter
+set -x  # ECHO on
+sb=/root/anaconda3/condabin
+echo '/root/anaconda3/bin/jupyter  $*' > $sb/jupyter
 
-echo '/root/anaconda3/bin/jupyter notebook --allow-root --NotebookApp.iopub_data_rate_limit=1.0e10 --ip=0.0.0.0 $*' > /root/anaconda3/condabin/jupy
+echo '/root/anaconda3/bin/jupyter notebook --allow-root --NotebookApp.iopub_data_rate_limit=1.0e10 --ip=0.0.0.0 $*' > $sb/jupy
 
-echo '/root/anaconda3/bin/ipython3 $*' > /root/anaconda3/condabin/ipython3
+echo '/root/anaconda3/bin/ipython3 $*' > $sb/ipython3
 
-chmod 777 /root/anaconda3/condabin/*
+chmod 777 $sb/*
+
+
+if [ "$(id -u)" != "0" ]; then
+	sb=~/bin
+	echo '/root/anaconda3/bin/jupyter  $*' > $sb/jupyter
+
+	echo '/root/anaconda3/bin/jupyter notebook --allow-root --NotebookApp.iopub_data_rate_limit=1.0e10 --ip=0.0.0.0 $*' > $sb/jupy
+
+	echo '/root/anaconda3/bin/ipython3 $*' > $sb/ipython3
+
+	chmod 777 $sb/*
+fi
