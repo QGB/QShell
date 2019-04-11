@@ -6,6 +6,8 @@ echo '/root/anaconda3/bin/jupyter notebook --allow-root --NotebookApp.iopub_data
 
 echo '/root/anaconda3/bin/ipython3 $*' > $sb/ipython3
 
+echo '/root/anaconda3/bin/pip $*' > $sb/pip
+
 chmod 777 $sb/*
 
 
@@ -17,5 +19,8 @@ if [ "$(id -u)" != "0" ]; then
 
 	echo '/root/anaconda3/bin/ipython3 $*' > $sb/ipython3
 
+	echo '/root/anaconda3/bin/pip $*' > $sb/pip
+	
+	
 	chmod 777 $sb/*
 fi
