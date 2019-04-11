@@ -31,7 +31,7 @@ alias pstg='pstree -ap|grep -C 3 '
 alias st='grep -rwnI ./ -e'
 alias unmount=umount
 alias mklink='ln -s '
-alias ipy3='ipython3 --no-banner --autocall=2 '"'"'--InteractiveShellApp.exec_lines=["from qgb import *"] '"'"' '
+alias ipy3='ipython3 --no-banner --autocall=2 '"'"'--InteractiveShellApp.exec_lines=["from qgb import *","py=U.py"] '"'"' '
 # 'from .. '  and   "from .."  is ok
 alias ipy='ipy3'
 
