@@ -1,6 +1,6 @@
 echo '/root/anaconda3/bin/jupyter  $*' > /root/anaconda3/condabin/jupyter
 
-echo '/root/anaconda3/bin/jupyter notebook --NotebookApp.iopub_data_rate_limit=1.0e10 --ip=0.0.0.0 $*' > /root/anaconda3/condabin/jupy
+echo '/root/anaconda3/bin/jupyter notebook --allow-root --NotebookApp.iopub_data_rate_limit=1.0e10 --ip=0.0.0.0 $*' > /root/anaconda3/condabin/jupy
 
 echo '/root/anaconda3/bin/ipython3 $*' > /root/anaconda3/condabin/ipython3
 
