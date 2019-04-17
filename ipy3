@@ -1,0 +1,1 @@
+ipython3 --no-banner --autocall=2 --InteractiveShellApp.exec_lines='["from qgb import *","py=U.py"]'
