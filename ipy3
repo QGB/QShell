@@ -1,1 +1,4 @@
-ipython3 --no-banner --autocall=2 --InteractiveShellApp.exec_lines='["from qgb import *","py=U.py"]'
+/root/anaconda3/bin/ipython3 --no-banner --autocall=2 '--InteractiveShellApp.exec_lines=["from qgb import *","py=U.py"] '
+
+
+#/root/anaconda3/bin/ipython3 --no-banner --autocall=2 '"'"'--InteractiveShellApp.exec_lines=["from qgb import *","py=U.py"] '"'"'
