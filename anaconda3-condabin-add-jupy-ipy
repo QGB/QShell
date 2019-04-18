@@ -1,0 +1,30 @@
+set -x  # ECHO on
+sb=/root/anaconda3/condabin
+echo '/root/anaconda3/bin/jupyter  $*' > $sb/jupyter
+
+echo '/root/anaconda3/bin/jupyter notebook --allow-root --NotebookApp.iopub_data_rate_limit=1.0e10 --ip=0.0.0.0 $*' > $sb/jupy
+
+echo '/root/anaconda3/bin/ipython3 $*' > $sb/ipython3
+
+echo '/root/anaconda3/bin/pip $*' > $sb/pip
+
+ln /root/anaconda3/bin/pipenv $sb/pipenv
+
+chmod 777 $sb/*
+
+
+if [ "$(id -u)" != "0" ]; then
+	sb=~/bin
+	echo '/root/anaconda3/bin/jupyter  $*' > $sb/jupyter
+
+	echo '/root/anaconda3/bin/jupyter notebook --allow-root --NotebookApp.iopub_data_rate_limit=1.0e10 --ip=0.0.0.0 $*' > $sb/jupy
+
+	echo '/root/anaconda3/bin/ipython3 $*' > $sb/ipython3
+
+	echo '/root/anaconda3/bin/pip $*' > $sb/pip
+	echo '/root/anaconda3/bin/pip install --user $*' > $sb/pipi
+	
+	ln /root/anaconda3/bin/pipenv $sb/pipenv
+	
+	chmod 777 $sb/*
+fi

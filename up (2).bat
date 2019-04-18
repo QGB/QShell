@@ -24,7 +24,7 @@ git config --global http.sslverify "false"
 git config --global core.filemode false
 git config --global credential.helper store
 
-git remote add q https://github.com/%gitUser%/%gitRepo%
+git remote add q https://%gitUser%@github.com/%gitUser%/%gitRepo%
 git remote add cq https://coding.net/u/%gitUser%/p/%gitRepo%/git/
 git add -A
 git commit -m "%commit_msg%"
