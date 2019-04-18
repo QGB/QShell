@@ -17,6 +17,7 @@ alias fr='find / -iname '
 alias fu='find / -user '
 alias fsd='find /sdcard -iname '
 
+alias gi='grep -i'
 alias sud='sudo su'
 alias ll='ls -al --full-time'
 alias md=mkdir
