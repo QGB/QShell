@@ -34,6 +34,7 @@ alias unmount=umount
 alias mklink='ln -s '
 # 'from .. '  and   "from .."  is ok
 alias ipy='ipy3'
+alias scp='scp -r'
 
 
 alias ds='docker search'
