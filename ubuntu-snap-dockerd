@@ -1,0 +1,13 @@
+set -x
+
+DOCKER_PATH=/snap/docker/355
+[[ ":$PATH:" != *":${DOCKER_PATH}/bin/:"* ]] && PATH="${DOCKER_PATH}/bin/:${PATH}"
+PATH="${DOCKER_PATH}/bin/:${PATH}"
+
+${DOCKER_PATH}/bin/dockerd -G docker --exec-root=/var${DOCKER_PATH}/run/docker --data-root=/var/snap/docker/common/var-lib-docker --pidfile=/var${DOCKER_PATH}/run/docker.pid --config-file=/var${DOCKER_PATH}/config/daemon.json --debug
+
+
+# mv ${DOCKER_PATH}/bin/docker ${DOCKER_PATH}/bin/docker.qgbmv  #: Read-only file system
+# ln /snap/bin/docker ${DOCKER_PATH}/bin/docker
+
+alias docker='snap run docker'
