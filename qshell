@@ -36,6 +36,7 @@ alias mklink='ln -s '
 # 'from .. '  and   "from .."  is ok
 alias ipy='ipy3'
 alias scp='scp -r'
+alias ifa='ifconfig|grep -C 1 255'
 
 
 alias ds='docker search'
@@ -121,8 +122,8 @@ alias e='termux-open-url file://$PWD/'
 
 alias rw='mount -o remount,rw /system ; mount -o remount,rw /'
 
-alias vq='vim /sdcard/qgb/U.py'
 
+alias vq='vim /sdcard/qgb/U.py'
 alias ve='vim /data/data/com.termux/files/home/getevent/src/getevent.c'
 
 export TERM=xterm-256color
