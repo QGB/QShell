@@ -1,2 +1,3 @@
-set -x
 alias docker='snap run docker'
+echo ##### Don't run directly
+echo source $0 
