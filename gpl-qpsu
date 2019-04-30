@@ -1,0 +1,1 @@
+sudo -u qgb bash -c 'cd /home/qgb/qgb;git pull origin master' 

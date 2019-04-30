@@ -33,10 +33,9 @@ alias pstg='pstree -ap|grep -C 3 '
 alias st='grep -rwnI ./ -e'
 alias unmount=umount
 alias mklink='ln -s '
-# 'from .. '  and   "from .."  is ok
-alias ipy='ipy3'
+alias ipy='ipy3'  # 'from .. '  and   "from .."  is ok
 alias scp='scp -r'
-alias ifa='ifconfig|grep -C 1 255'
+alias ifa='ifconfig|grep -C 2 255'
 
 
 alias ds='docker search'

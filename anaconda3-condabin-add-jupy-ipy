@@ -1,5 +1,5 @@
 set -x  # ECHO on
-sb=/root/anaconda3/condabin
+sb=/usr/local/sbin #/root/anaconda3/condabin
 echo '/root/anaconda3/bin/jupyter  $*' > $sb/jupyter
 
 echo '/root/anaconda3/bin/jupyter notebook --allow-root --NotebookApp.iopub_data_rate_limit=1.0e10 --ip=0.0.0.0 $*' > $sb/jupy
