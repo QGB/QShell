@@ -25,6 +25,7 @@ alias md=mkdir
 alias ipconfig=ifconfig
 alias tracert=traceroute
 alias ns='netstat -antlp|sort -r -n -k5'
+alias nsl='netstat -antlp|grep -E "::|0.0.0"  '
 alias wns="watch -n0.1 'netstat -antlp|sort -r -n -k5'"
 alias wio='watch -n0.1 iostat -c -d'
 alias 7='chmod 777'
