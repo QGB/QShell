@@ -18,6 +18,7 @@ alias fr='find / -iname '
 alias fu='find / -user '
 alias fsd='find /sdcard -iname '
 
+alias count='wc' # line word byte
 alias gi='grep -i'
 alias sud='sudo su'
 alias ll='ls -al --full-time'
