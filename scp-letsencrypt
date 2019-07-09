@@ -1,0 +1,7 @@
+set -x
+
+sudo md /etc/letsencrypt
+
+scp -rP 2202 root@150.109.64.123:/etc/letsencrypt/* /etc/letsencrypt
+
+# * must be
