@@ -1,2 +1,5 @@
-env python -m SimpleHTTPServer $*  && env python -m http.server $*
+set -x        # ECHO on
+
+env python -m SimpleHTTPServer $*
+env python -m http.server $*
 
