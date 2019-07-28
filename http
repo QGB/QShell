@@ -1,2 +1,2 @@
-/usr/bin/python -m SimpleHTTPServer $*
+env python -m SimpleHTTPServer $*  && env python -m http.server $*
 
